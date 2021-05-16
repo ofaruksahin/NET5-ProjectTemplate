@@ -1,0 +1,48 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$.API</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>$safeprojectname$.API</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="API.csproj" File="API.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="AutoMapper" TargetFolderName="AutoMapper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MapperProfile.cs">MapperProfile.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseController.cs">BaseController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Dto" TargetFolderName="Dto">
+        <Folder Name="Request" TargetFolderName="Request" />
+        <Folder Name="Response" TargetFolderName="Response" />
+      </Folder>
+      <Folder Name="Filters" TargetFolderName="Filters" />
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseResult.cs">BaseResult.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseResource.cs">BaseResource.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseResource.en.resx">BaseResource.en.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseResource.tr.resx">BaseResource.tr.resx</ProjectItem>
+      </Folder>
+      <Folder Name="Utilities" TargetFolderName="Utilities" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

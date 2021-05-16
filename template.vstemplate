@@ -1,0 +1,28 @@
+﻿<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Quickly Unit of Work API</Name>
+		<Description>Create Quickly Unit of Work Based Web API For .NET5</Description>
+		<Icon>Icon.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<ProjectTemplateLink ProjectName="$projectname$.API">
+				Template\API\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="Bootstrapper">
+				Template\Bootstrapper\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="Core">
+				Template\Core\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="Environment">
+				Template\Environment\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="Service">
+				Template\Service\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>

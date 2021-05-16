@@ -1,0 +1,26 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Bootstrapper</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Bootstrapper</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Bootstrapper.csproj" File="Bootstrapper.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="AutoMapperBootstrapper.cs">AutoMapperBootstrapper.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DependencyInjectionBootstrapper.cs">DependencyInjectionBootstrapper.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FluentValidatorBootstrapper.cs">FluentValidatorBootstrapper.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LocalizationBootstrapper.cs">LocalizationBootstrapper.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SwaggerBootstrapper.cs">SwaggerBootstrapper.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

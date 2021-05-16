@@ -1,0 +1,47 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Core</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Core</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Core.csproj" File="Core.csproj" ReplaceParameters="true">
+      <Folder Name="Attributes" TargetFolderName="Attributes" />
+      <Folder Name="Entities" TargetFolderName="Entities">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseEntity.cs">BaseEntity.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Enums" TargetFolderName="Enums">
+        <ProjectItem ReplaceParameters="true" TargetFileName="enumRecordStatus.cs">enumRecordStatus.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IDbContext.cs">IDbContext.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUnitOfWork.cs">IUnitOfWork.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Utilities" TargetFolderName="Utilities">
+        <Folder Name="Result" TargetFolderName="Result">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DataResult.cs">DataResult.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ErrorDataResult.cs">ErrorDataResult.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ErrorResult.cs">ErrorResult.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IDataResult.cs">IDataResult.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IResult.cs">IResult.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Result.cs">Result.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SuccessDataResult.cs">SuccessDataResult.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SuccessResult.cs">SuccessResult.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConnectionInfo.cs">ConnectionInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Messages.cs">Messages.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Regexs.cs">Regexs.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
